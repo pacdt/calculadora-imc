@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet" />
+		<title>Cálculo IMC</title>
+	</head>
+	<body>
+		<main id="container">
+			<section id="main">
+				<h1>Calculadora de IMC</h1>
+
+				<div id="corpo">
+					<article id="imc">
+						<h2>IMC</h2>
+						<p>Menos do que 18,5</p>
+						<p>Entre 18,5 e 24,9</p>
+						<p>Entre 25 e 29,9</p>
+						<p>Entre 30 e 34,9</p>
+						<p>Entre 35 e 39,9</p>
+						<p>Mais que 40</p>
+					</article>
+					<article id="result">
+						<h2>Resultado</h2>
+						<p>Abaixo do Peso</p>
+						<p>Peso Ideial</p>
+						<p>Sobrepeso</p>
+						<p>Obesidade Grau I</p>
+						<p>Obesidade Grau II</p>
+						<p>Obesidade Grau III</p>
+					</article>
+				</div>
+			</section>
+
+			<section id="calc">
+				<legend>
+					Digite seu Peso <br />
+					<input type="text" id="peso" placeholder="Exemplo: 85.23" />
+				</legend>
+				<legend>
+					Digite sua Altura <br />
+					<input
+						type="text"
+						id="altura"
+						placeholder="Exemplo: 1.72" />
+				</legend>
+			</section>
+
+			<button onclick="calculateIMC()">Calcular</button>
+
+			<div id="resultadoFinal">
+				<h2>Seu resultado é:</h2>
+				<h3 id="finalResult">--</h3>
+				<p>Seu IMC é de: <span id="imcResult">-</span></p>
+			</div>
+		</main>
+		<script src="./script.js"></script>
+	</body>
+</html>
