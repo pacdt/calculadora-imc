@@ -1,4 +1,4 @@
-const result = "abcate";
+const result = "";
 
 function calculateIMC() {
 	const weight = document.getElementById("peso").value;
